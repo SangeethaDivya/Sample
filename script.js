@@ -1,5 +1,5 @@
 var i = 0;
-var userName = 'Sangeetha Divya!';
+var userName = 'angeetha Divya!';
 var speed = 200;
 
 function typeWriter() {
@@ -9,8 +9,8 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
   else{
-    document.getElementById("name").innerHTML = '';
-     i= 0;
+    document.getElementById("name").innerHTML = 'S';
+     i = 0;
      setTimeout(typeWriter, speed);
   }
 }
