@@ -1,86 +1,239 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Sangeetha Divya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Sangeetha Divya - Portfolio</title>
 </head>
 <body>
-    <h1 id="name">S</h1>
-    <div id="About">
-        <h2>Who Am I?</h2>
-        <span>Hi! Thanks for showing interest to know more about me!</span>
-        <div>
-            <table>
-                <thead>Contact details:</thead>
-                <tbody>
-                    <tr>
-                        <td>Email:</td>
-                        <td>sangeethadivya15@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Current Company:</td>
-                        <td>Epam Systems</td>
-                    </tr>         
-                    <tr>
-                        <td>Role:</td>
-                        <td>.Net Backend Developer</td>
-                    </tr>         
-                    <tr>
-                        <td>Designation:</td>
-                        <td>Senior Software Engineer</td>
-                    </tr>  
-                </tbody>
-            </table>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">SD</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#journey">Journey</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <div>
-            A passonate Software Engineer with 3+ years of experience in .Net.
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 id="name">Sangeetha Divya</h1>
+            <p class="hero-subtitle">Senior Software Engineer | .NET Backend Developer</p>
+            <p class="hero-description">Passionate about creating efficient and scalable solutions</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
         </div>
-    </div>
-    
-    <h2>Journey</h2>
-    <div id="Journey">
-        <div class="timeline-step">
-            <div class="dot"></div>
-            <div class="content">      
-                Tirumala Engineering College (2018-2022)
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Who Am I?</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm Sangeetha Divya, a passionate Senior Software Engineer with over 3 years of experience crafting robust backend solutions.</p>
+                    <p>Specializing in .NET technologies, I thrive on building scalable systems that drive business value. My journey in software engineering has been driven by curiosity, continuous learning, and a commitment to delivering high-quality solutions that make a difference.</p>
+                    <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or mentoring aspiring developers. I believe in the power of collaboration and knowledge sharing to build better software and stronger communities.</p>
+                </div>
+                <div class="contact-details">
+                    <h3>Contact Details</h3>
+                    <table>
+                        <tr>
+                            <td>Email:</td>
+                            <td>sangeethadivya15@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Current Company:</td>
+                            <td>Epam Systems</td>
+                        </tr>         
+                        <tr>
+                            <td>Role:</td>
+                            <td>.NET Backend Developer</td>
+                        </tr>         
+                        <tr>
+                            <td>Designation:</td>
+                            <td>Senior Software Engineer</td>
+                        </tr>  
+                    </table>
+                </div>
             </div>
         </div>
-        <div class="timeline-step">
-            <div class="dot"></div>
-            <div class=" content">
-                Epam System
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">.NET Core</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">ASP.NET</span>
+                        <span class="skill-tag">Entity Framework</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Redis</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Certifications</h3>
+                    <div class="certifications">
+                        <div class="certification-item" onclick="openCertificateModal('Azure Fundamentals (AZ-900)', 'AZ-900 Certificate', 'azure-fundamentals.jpg')">
+                            <span class="cert-icon">🏆</span>
+                            <div class="cert-info">
+                                <span class="cert-name">Azure Fundamentals (AZ-900)</span>
+                                <span class="cert-date">Microsoft</span>
+                            </div>
+                            <span class="cert-link">📄</span>
+                        </div>
+                        <div class="certification-item" onclick="openCertificateModal('GitHub Copilot', 'GitHub Copilot Certification', 'github-copilot.jpg')">
+                            <span class="cert-icon">🤖</span>
+                            <div class="cert-info">
+                                <span class="cert-name">GitHub Copilot</span>
+                                <span class="cert-date">GitHub</span>
+                            </div>
+                            <span class="cert-link">📄</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="timeline-step">
-            <div class="dot"></div>
-            <div class="content">
-                        Intern (Jan 2022 - June 2022)
+    </section>
+
+    <section id="journey" class="journey">
+        <div class="container">
+            <h2>My Journey</h2>
+            <div class="timeline">
+                <div class="timeline-step">
+                    <div class="timeline-content">
+                        <h3>Epam Systems - Senior Software Engineer</h3>
+                        <p>September 2025 - Present</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-content">
+                        <h3>Epam Systems - Software Engineer</h3>
+                        <p>March 2024 - August 2025</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-content">
+                        <h3>Epam Systems - Junior Software Engineer</h3>
+                        <p>July 2022 - Feb 2024</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-content">
+                        <h3>Epam Systems - Intern</h3>
+                        <p>Jan 2022 - June 2022</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-content">
+                        <h3>Tirumala Engineering College</h3>
+                        <p>2018-2022</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="timeline-step">
-            <div class="dot"></div>
-            <div class="content">
-                        Junior Software Engineer (July 2022 - Feb 2024)
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>E-commerce Platform</h3>
+                    <p>Built a scalable e-commerce backend using .NET Core and Azure.</p>
+                    <div class="project-tech">
+                        <span>.NET Core</span>
+                        <span>Azure</span>
+                        <span>SQL Server</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Microservices Architecture</h3>
+                    <p>Designed and implemented microservices for a financial application.</p>
+                    <div class="project-tech">
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                        <span>RabbitMQ</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>API Gateway</h3>
+                    <p>Developed a secure API gateway with authentication and rate limiting.</p>
+                    <div class="project-tech">
+                        <span>ASP.NET Core</span>
+                        <span>IdentityServer</span>
+                        <span>Redis</span>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="timeline-step">
-            <div class="dot"></div>
-            <div class="content">
-                        Software Engineer (March 2024 - August 2025)
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <p>I'm always open to discussing new opportunities and interesting projects.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p>sangeethadivya15@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>LinkedIn</h3>
+                        <p>linkedin.com/in/sangeetha-divya</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="timeline-step">
-            <div class="dot"></div>
-            <div class="content">
-                        Senior Software Engineer (September 2025 - present)
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Sangeetha Divya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeCertificateModal()">&times;</span>
+            <h2 id="modalTitle">Certificate</h2>
+            <div class="certificate-preview">
+                <div class="certificate-placeholder">
+                    <div class="cert-placeholder-icon">📜</div>
+                    <p id="certDescription">Certificate Preview</p>
+                    <p class="cert-note">Certificate file would be displayed here</p>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="download-btn" onclick="downloadCertificate()">Download Certificate</button>
+                <button class="preview-btn" onclick="previewCertificate()">Full Preview</button>
             </div>
         </div>
-    </div>
-    <h2>Certifications</h2>
-    <div id="Certifications">
-        <span class="star"></span>
-        <span>Azure Fundamentals (AZ-900)</span>
     </div>
 </body>
 </html>
