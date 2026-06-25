@@ -1,17 +1,23 @@
 // Typewriter effect for the name
 var i = 0;
-var userName = 'angeetha Divya';
+var userName = 'Sangeetha Divya';
 var speed = 200;
 
 function typeWriter() {
+  const nameElement = document.getElementById("name");
+
+  if (i === 0) {
+    nameElement.innerHTML = '';
+  }
+
   if (i < userName.length) {
-    document.getElementById("name").innerHTML += userName.charAt(i);
+    nameElement.innerHTML += userName.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
   } else {
     // Reset and restart the animation
     setTimeout(() => {
-      document.getElementById("name").innerHTML = 'S';
+      nameElement.innerHTML = '';
       i = 0;
       typeWriter();
     }, 2000);
